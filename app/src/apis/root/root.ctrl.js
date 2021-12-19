@@ -5,7 +5,7 @@ const crypto = require('crypto');
 
 const todolist = {
   read: (req, res) => {
-    const query = 'SELECT id AS "index", name, description FROM todos;';
+    const query = 'SELECT * FROM todos;';
 
     db.query(query, (err, posts) => {
       if (err) return res.status(500).send('데이터 조회에 실패하였습니다.');
