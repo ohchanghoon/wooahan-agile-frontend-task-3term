@@ -12,6 +12,7 @@ Vanila JS를 이용하여 Front 기능을 구현합니다.
       * [Check Box편](https://github.com/ohchanghoon/wooahan-agile-frontend-task-3term/issues/3)
    3. [Log In 구현](https://github.com/ohchanghoon/wooahan-agile-frontend-task-3term/issues/4)
    4. [To Do List 구현](https://github.com/ohchanghoon/wooahan-agile-frontend-task-3term/issues/1)
+   5. [dongurami 게시판 구현](https://github.com/ohchanghoon/wooahan-agile-frontend-task-3term/issues/7)
 
 <br>
 
