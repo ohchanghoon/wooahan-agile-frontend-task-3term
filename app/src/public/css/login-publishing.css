@@ -34,7 +34,18 @@ body {
   color: #000000;
 }
 
-.pro {
+.proid {
+  position: absolute;
+  top: 37%;
+  z-index: 1;
+  padding-right: 20px;
+  height: 24px;
+  width: 24px;
+}
+
+.propw {
+  position: absolute;
+  top: 43%;
   padding-right: 20px;
   height: 24px;
   width: 24px;
@@ -56,8 +67,8 @@ body {
 }
 
 .설명 {
-  width: 505px;
-  height: 40px;
+  font-size: 18px;
+  text-align: center;
   border: none;
 }
 
@@ -138,6 +149,7 @@ button:hover {
 
 .로그인설명 {
   text-decoration: none;
+  color: #c4c4c4;
   margin-left: 20px;
 }
 
