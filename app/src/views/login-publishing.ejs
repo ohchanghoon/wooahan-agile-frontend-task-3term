@@ -1,14 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/login-publishing.css" />
+        <script src="/js/login-publishing.js" defer></script>
 
-    <link rel="stylesheet" href="/css/login-publishing.css" />
-    <script src="/js/login-publishing.js" defer></script>
-
-    <title>Wooahan Agile</title>
-  </head>
-  <body></body>
+        <title>Wooahan Agile</title>
+    </head>
+    <body>
+        <div class="wholeWrapper">
+            <div class="circleImg"></div>
+            <div class="mainWrapper">
+                <div class="title">로그인</div>
+                <div class="inputBox">
+                    <div class="inputEach">
+                        <div class="loginImg"></div>
+                        <input
+                            class="inputInfo"
+                            placeholder="학번을 입력해 주세요."
+                        />
+                    </div>
+                    <div class="inputEach">
+                        <div class="pwImg"></div>
+                        <input
+                            class="inputInfo"
+                            placeholder="비밀번호를 입력해 주세요."
+                        />
+                    </div>
+                </div>
+                <div>
+                    <button class="loginButton">로그인</button>
+                    <div class="keepLogin">
+                        <div class="keepButton"></div>
+                        로그인 상태 유지
+                    </div>
+                </div>
+                <div class="findBox">
+                    <span class="findEach">아이디 찾기</span>
+                    <span class="findEach">비밀번호 찾기</span>
+                </div>
+                <div class="lureNaver">
+                    <img class="naverIcon" src="/images/naverLogo.png" />
+                    <div class="forNaver">네이버 아이디로 로그인</div>
+                </div>
+                <div class="registerBox">
+                    <span class="findEach">아직 계정이 없으신가요?</span>
+                    <span class="findEach">회원가입</span>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

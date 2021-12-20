@@ -1,0 +1,168 @@
+* {
+    box-sizing: border;
+    color: #c4c4c4;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.wholeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(226, 226, 226); */
+    width: 100vw;
+    height: 100vh;
+}
+.circleImg {
+    margin: 110px 0 50px 0;
+    width: 230.15px;
+    height: 100px;
+    display: block;
+    background-image: url("../images/동그라미.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.mainWrapper {
+    margin: 0 0 0 0;
+    width: 780px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #90e2d6;
+    border-radius: 16px;
+}
+.title {
+    font-size: 50px;
+    color: black;
+    margin: 46px 0 38px;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.inputInfo {
+    width: 100%;
+    height: 65px;
+    border: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.inputEach {
+    display: flex;
+    align-items: center;
+    width: 505px;
+    margin: 0 0 25px;
+    border-bottom: solid 1px #c4c4c4;
+}
+.loginImg {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0;
+    display: block;
+    background-image: url("../images/아이디.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center auto;
+}
+.pwImg {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0;
+    display: block;
+    background-image: url("../images/비밀번호.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center auto;
+}
+.loginButton {
+    width: 505px;
+    height: 65px;
+    border: none;
+    margin: 0 0 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #90e2d6;
+    color: white;
+}
+.loginButton:hover {
+    background-color: #80cbc4;
+    cursor: pointer;
+}
+.loginButton:active {
+    background-color: #90e2d6;
+    cursor: pointer;
+}
+.keepButton {
+    width: 20px;
+    height: 20px;
+    border: solid #c4c4c4 1px;
+    border-radius: 2px;
+    margin: 0 10px 0 0;
+}
+
+.keepLogin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 28px;
+    cursor: pointer;
+}
+.findBox {
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px;
+}
+.findEach:hover {
+    cursor: pointer;
+}
+.findBox > span:first-child {
+    margin: 0 25px 0 0;
+}
+.lureNaver {
+    width: 288px;
+    height: 60px;
+    margin: 0 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid #c4c4c4 1px;
+    border-radius: 5px;
+    /* background-color: rgb(228, 228, 255); */
+}
+.naverIcon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forNaver {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 1px #c4c4c4;
+    cursor: pointer;
+}
+.registerBox {
+    width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 25px;
+}
+.registerBox > .findEach {
+    color: black;
+}
+
+/*로그인 위 : 46px, 로그인 아래 : 38px, 로그인 상태유지 아래 : 28px*/
