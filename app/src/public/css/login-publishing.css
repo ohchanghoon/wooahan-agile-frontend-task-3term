@@ -100,10 +100,15 @@ input::-webkit-inner-spin-button {
 }
 #logInMaintainBox {
     color: #c4c4c4;
-    font-size: 20px;
+    width: 20px;
+    height: 20px;
     text-align: left;
+    /* line-height: 2.5; */
+    display: inline-block;
+    vertical-align: middle;
 }
 #logInMaintainText {
+    padding-top: 5px;
     /* text-align: left; */
     color: #c4c4c4;
     font-size: 18px;
