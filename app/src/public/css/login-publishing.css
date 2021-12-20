@@ -15,45 +15,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid;
 }
 
 .mainBox {
   display: flex;
   flex-direction: column;
-  margin: 50px 0 0 0;
-  padding: 15px;
+  margin: 50px 570px 110px 570px;
   height: 650px;
   width: 780px;
-  border: 4px solid #80cbc4;
+  stroke: 2px;
   border-radius: 16px;
+  border: 4px solid #90e2d6;
 }
 /*border: 1px solid black*/
 .idWrap {
   display: flex;
-  margin: 0 auto;
+  margin: 0 0 25px 0;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 65px;
   width: 505px;
-  border: 4px solid #ffffff;
-  border-radius: 16px;
-}
-.idInput {
-  width: 100%;
-  height: 100%;
+  border-bottom: solid #c4c4c4;
 }
 .pwWrap {
   display: flex;
+  margin: 0 0 25px 0;
   flex-direction: row;
-  height: 65px;
+  align-items: center;
+  justify-content: center;
   width: 505px;
-  border: 4px solid #ffffff;
-  border-radius: 16px;
+  border-bottom: solid #c4c4c4;
+  /* border: 4px solid #ffffff;
+  border-radius: 16px; */
+}
+.idInput {
+  margin: 0 0 20px 0;
+  border: 0;
+  outline: 0;
+  color: #c4c4c4;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }
 .idIcon {
-  margin: 0 20px 0 0;
+  margin: 0 20px 20px 0;
   width: 24px;
   height: 24px;
   /* background-color: blue; */
@@ -63,7 +70,7 @@
   background-position: center center;
 }
 .pwIcon {
-  margin: 0 20px 0 0;
+  margin: 0 20px 20px 0;
   width: 24px;
   height: 24px;
   /* background-color: blue; */
@@ -77,75 +84,131 @@
   height: 100%;
 }
 .loginTitle {
+  font-size: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
 }
 
-.checkBox {
-  border: 3px solid;
+.checkBoxWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 20px;
+  color: #c4c4c4;
 }
 .container {
+  display: flex;
+  height: 20px;
+  width: 505px;
   position: relative;
   left: 0;
 }
-/* .button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 .loginWrapper {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  background-color: greenyellow;
 }
 #login {
   justify-content: center;
+  margin: 0 0 25px 0;
   height: 65px;
   width: 505px;
   border-radius: 10px;
   font-size: 18px;
   color: #ffffff;
   background-color: #90e2d6;
-  border: 3px solid;
+  border-color: #ffffff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+#searchId {
+  background-color: #ffffff;
+}
+#searchPw {
+  background-color: #ffffff;
 }
 .idpwForget {
+  margin: 25px 0 28px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 3px solid;
 }
+/*idforget*/
 .idForget {
-  border: 3px solid;
+  text-decoration-line: none;
+  margin: 0 25px 0 0;
+  color: #c4c4c4;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }
 .pwForget {
+  text-decoration-line: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid;
+  color: #c4c4c4;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+.naverLoginWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .naverLogin {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  height: 60px;
+  width: 288px;
+  /* border-radius: 5px;*/
   border: 3px solid;
+  color: #c4c4c4;
+  border-color: #c4c4c4;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }
 .naverImg {
+  background-image: url("../images/naver.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 60px;
+  width: 60px;
   border: 3px solid;
 }
 .naverIdLogin {
-  border: 3px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 60px;
 }
 .account {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 3px solid;
+  margin: 28px 0 42px 0;
 }
 .notYetAccount {
-  border: 3px solid;
+  text-decoration-line: none;
+  color: black;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }
 .signUp {
-  border: 3px solid;
+  text-decoration-line: none;
+  color: black;
+  margin: 0 0 0 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+label {
+  font-size: 18px;
+  color: #c4c4c4;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
 }

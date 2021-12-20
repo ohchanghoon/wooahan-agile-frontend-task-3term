@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/login-publishing.css" />
     <script src="/js/login-publishing.js" defer></script>
 
@@ -23,15 +25,16 @@
           <div class = "idIcon"></div>
           <input class = "idInput" type = "text" placeholder="학번을 입력해 주세요.">
         </div>
-        <div class="idWrap" id ="idLine">
+        <div class="pwWrap" id ="idLine">
           <div class = "pwIcon"></div>
           <input class = "idInput" type = "text" placeholder="비밀번호를 입력해 주세요.">
         </div>
       </div>
-    <div class='loginWrapper'>
+      <div class='loginWrapper'>
         <button id = "login">로그인</button>
       </div>
-      <div class = "checkBox">
+
+      <div class = "checkBoxWrapper">
         <div class = "container">
             <input type ="checkbox">
         
@@ -41,28 +44,29 @@
 
       <div class = "idpwForget">
         <div class = "idForget">
-          아이디 찾기
+          <a target="_blank" class="idForget" href="">아이디 찾기</a>
         </div>
         <div class = "pwForget">
-          비밀번호 찾기
+          <a target="_blank" class="pwForget" href="">비밀번호 찾기</a>
         </div>
       </div>
 
-      <div class = "naverLogin">
-        <div class = "naverImg">
-
-        </div>
-        <div class = "naverIdLogin">
-          네이버 아이디로 로그인
+      <div class="naverLoginWrapper">
+        <div class = "naverLogin">
+          <div class = "naverImg">
+          </div>
+          <div class = "naverIdLogin">
+            네이버 아이디로 로그인
+          </div>
         </div>
       </div>
 
       <div class = "account">
         <div class = "notYetAccount">
-          아직 계정이 없으신가요?
+          <a target="_blank" class="notYetAccount" href="">아직 계정이 없으신가요?</a>
         </div>
         <div class = "signUp">
-          회원가입
+          <a target="_blank" class="signUp" href="">회원 가입</a>
         </div>
       </div>
     </div>
