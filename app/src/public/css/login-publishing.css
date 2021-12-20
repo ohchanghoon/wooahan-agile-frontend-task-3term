@@ -1,0 +1,156 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.up {
+  width: 230.15px;
+  height: 100px;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 570px;
+  padding-right: 570px;
+  padding-bottom: 170px;
+}
+
+.box {
+  width: 780px;
+  height: 650px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid #90e2d6;
+}
+
+.부제목 {
+  font-size: 50px;
+  color: #000000;
+}
+
+.pro {
+  padding-right: 20px;
+  height: 24px;
+  width: 24px;
+}
+
+.id {
+  display: flex;
+  padding-bottom: 25px;
+  width: 505px;
+  margin-bottom: 20px;
+  border-bottom: 2px #c4c4c4 solid;
+}
+
+.pw {
+  display: flex;
+  width: 505px;
+  padding-bottom: 25px;
+  border-bottom: 2px #c4c4c4 solid;
+}
+
+.설명 {
+  width: 505px;
+  height: 40px;
+  border: none;
+}
+
+.item {
+  padding-top: 46px;
+}
+
+button {
+  width: 505px;
+  height: 65px;
+  border-radius: 10px;
+  color: white;
+  background: #90e2d6;
+  border: solid #90e2d6;
+}
+
+button:hover {
+  background: #80cbc4;
+}
+
+.cb {
+  width: 505px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+  color: #c4c4c4;
+  align-items: left;
+  margin-right: 10px;
+}
+
+.설명 {
+  color: #c4c4c4;
+}
+
+.search {
+  padding-bottom: 25px;
+}
+
+.idSearch {
+  padding-right: 25px;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+.pwSearch {
+  color: #c4c4c4;
+  text-decoration: none;
+}
+
+.naverLo {
+  height: 60px;
+  width: 288px;
+  border-radius: 5px;
+  color: #c4c4c4;
+  border: solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.naverLo img {
+  height: 60%;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+.none {
+  height: 60px;
+  border-left: solid #c4c4c4;
+}
+
+.로그인설명 {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.naLo {
+  text-decoration: none;
+}
+
+.마지막줄 {
+  padding-top: 28px;
+  padding-bottom: 42px;
+}
+
+.가입 {
+  text-decoration: none;
+  color: black;
+}
