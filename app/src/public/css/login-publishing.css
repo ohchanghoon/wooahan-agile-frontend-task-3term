@@ -113,6 +113,39 @@ input[type='checkbox'] {
   margin-right: 10px;
 }
 
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none !important;
+  border: 1px solid var(--color-mint);
+  border-radius: 2px;
+  background: #fbfbfb;
+}
+
+input[type='checkbox']::before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: scale(0) translate(-50%, -50%);
+  line-height: 1;
+}
+
+input[type='checkbox']:checked {
+  background-color: var(--color-mint);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+input[type='checkbox']:checked::before {
+  border-radius: 2px;
+  transform: scale(1) translate(-50%, -50%);
+}
+
 .login-check label {
   cursor: pointer;
 }
