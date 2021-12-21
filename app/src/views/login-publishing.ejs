@@ -12,35 +12,39 @@
   </head>
 
   <body>
-    <h1>송현경</h1>
     <img class="logo" src="/images/동그라미.png"/>
     
     <div class = "Box" >
     <form id="login-form" onsubmit="return login()">
-    <h1>로그인</h1>
-
+      <h1 class = "title">로그인</h1> 
     <div class="input-box">
       <div class="wrap">
         <img class="icon" src="/images/아이디.jpg"/> 
-        <input type="email" placeholder= "학번을 입력해 주세요." id="user-email" required>
+        <input type="email" class = "input-design" placeholder= "학번을 입력해 주세요." id="user-email" required>
       </div> 
       <div class="wrap">
         <img class="icon" src="/images/비밀번호.jpg"/> 
-        <input type="password" placeholder="비밀번호를 입력해 주세요." id="user-pass">
+        <input type="password" class = "input-design" placeholder="비밀번호를 입력해 주세요." id="user-pass">
       </div>
       <input id="login-btn" type="submit" value="로그인" > 
     </div>
     <input type="checkbox" id="status" >
-    <label for "status">로그인 상태 유지</label>
+    <label for "status" class = "login-check">로그인 상태 유지</label>
       <div class="ipfind">
-        <p>아이디 찾기</p>
-        <p>비밀번호 찾기</p>
+        <p class = "ipcenter">아이디 찾기</p>
+        <p class = "ipcenter">비밀번호 찾기</p>
       </div>
-      <img class="naver" src="/images/네이버로고.png"/> 
+      <div class ="naver-login">
+        <img class="naver" src="/images/네이버로고.png"/> 
+        <hr class = "right-border">
+        <p class = "naver-font">네이버 아이디로 로그인</p>
+      </div>
+      <div class = "no-id">
+        <p>아직 계정이 없으신가요</p>
+        <p>회원가입</p>
+      </div>
+      </div>
     </div>
-
-
   </form>
-
   </body>
 </html>
