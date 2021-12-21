@@ -1,0 +1,147 @@
+#logoBox {
+    text-align: center;
+    padding: 110px 0 50px 0;
+}
+#logo {
+    width: 230.15px;
+    height: 100px;
+}
+#logInText {
+    font-size: 60px;
+    padding: 25px 0 0 0;
+}
+#logInBox {
+    width: 780px;
+    height: 650px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+    text-align: center;
+    border: 2px solid #90E2D6;
+    border-radius: 16px;
+}
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#idBox {
+    width: 63%;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom : 2px solid #c4c4c4;
+}
+
+*:focus {
+    outline: none;
+}
+
+#passwordBox {
+    width: 63%;
+    margin: 0 auto;
+    text-align: left;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom : 2px solid #c4c4c4;
+}
+#id {
+    font-size: 17px;
+    height: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom : none;
+}
+#password {
+    font-size: 17px;
+    height: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom : none;
+}
+#passwordLogo {
+    height: 24px;
+    width: 24;
+    padding: 0 20px 0 0;
+    
+}
+#idLogo {
+    height: 24px;
+    width: 24;
+    padding: 0 20px 0 0;
+}
+#logInButton:hover {
+    background-color: #80CBC4;
+}
+#logInButton {
+    cursor: pointer;
+    margin-top: 25px;
+    height: 65px;
+    width: 505px;
+    border-radius: 10px;
+    background-color: #90E2D6;
+    border: none;
+    text-align: center;
+}
+#buttonText {
+    font-size: 22px;
+    color: #ffffff;
+}
+#loggInMaintainDIV {
+    margin: 25px 0; /*17px*/
+    width: 420px;
+}
+#logInMaintainBox {
+    color: #c4c4c4;
+    width: 20px;
+    height: 20px;
+    text-align: left;
+    /* line-height: 2.5; */
+    display: inline-block;
+    vertical-align: middle;
+}
+#logInMaintainText {
+    padding-top: 5px;
+    /* text-align: left; */
+    color: #c4c4c4;
+    font-size: 18px;
+}
+#findInfo {
+    color: #c4c4c4;
+    margin: 0 0 25px 0;
+}
+#findId {
+    margin: 0 25px;
+}
+#naverLogBox {
+    margin: 0 auto;
+    border: 2px solid #c4c4c4;
+    font-size: 20px;
+    height: 60px;
+    width: 288px;
+    border-radius: 5px;
+    display: flex;
+}
+#naverLog {
+    /* height: 42px;
+    width: 40px; */
+    border-right: 2px solid #c4c4c4;
+    padding: 12px;
+}
+#naverIdLogIn {
+    padding: 16px 12px;
+    color: #c4c4c4;
+}
+#signUpBox {
+    margin: 28px 0 42px 0;
+}
+#signUp {
+    margin: 0 0 0 15px;
+}
