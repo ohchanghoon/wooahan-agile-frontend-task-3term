@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/css/login-publishing.css" />
+        <script src="/js/login-publishing.js" defer></script>
 
-    <link rel="stylesheet" href="/css/login-publishing.css" />
-    <script src="/js/login-publishing.js" defer></script>
-
-    <title>Wooahan Agile</title>
-  </head>
-  <body></body>
+        <title>Wooahan Agile</title>
+    </head>
+    <body>
+        <img class="circle-img" src="/images/동그라미.png" />
+        <div class="main-box">
+            <div class="title">로그인</div>
+            <div>
+                <div class="input-wrapper">
+                    <img class="input-img" src="/images/아이디.jpg" />
+                    <input
+                        class="input-info"
+                        placeholder="학번을 입력해 주세요."
+                    />
+                </div>
+                <div class="input-wrapper">
+                    <img class="input-img" src="/images/비밀번호.jpg" />
+                    <input
+                        class="input-info"
+                        placeholder="비밀번호를 입력해 주세요."
+                    />
+                </div>
+            </div>
+            <div>
+                <button class="login-button">로그인</button>
+            </div>
+            <div class="keep-login">
+                <input id="keep-label" type="checkbox" />
+                <label for="keep-label">로그인 상태 유지</label>
+            </div>
+            <div class="find-box">
+                <a class="find-each">아이디 찾기</a>
+                <a class="find-each">비밀번호 찾기</a>
+            </div>
+            <div class="lure-naver">
+                <img class="naver-icon" src="/images/naverLogo.png" />
+                <a class="for-naver">네이버 아이디로 로그인</a>
+            </div>
+            <div class="register-box">
+                <a class="find-each">아직 계정이 없으신가요?</a>
+                <a class="find-each">회원가입</a>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border;
+    color: #c4c4c4;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 1080px;
+}
+.circle-img {
+    margin: 110px 0 0 0;
+    width: 230.15px;
+    height: 100px;
+    display: block;
+}
+.main-box {
+    margin: 50px 0 0 0;
+    padding: 0 0 42px;
+    width: 780px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #90e2d6;
+    border-radius: 16px;
+}
+.title {
+    font-size: 50px;
+    color: black;
+    margin: 46px 0 38px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 505px;
+    margin: 0 0 25px;
+    border-bottom: solid 1px #c4c4c4;
+}
+.input-img {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0 0;
+}
+.input-info {
+    height: 65px;
+    border: none;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.input-info::placeholder {
+    color: #c4c4c4;
+}
+.login-button {
+    width: 505px;
+    height: 65px;
+    border: none;
+    margin: 0 0 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #90e2d6;
+    color: white;
+}
+.login-button:hover {
+    background-color: #80cbc4;
+    cursor: pointer;
+}
+.login-button:active {
+    background-color: #90e2d6;
+    cursor: pointer;
+}
+
+.keep-login {
+    width: 505px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 28px;
+    position: relative;
+}
+#keep-label {
+    -webkit-appearance: none;
+    /* 얘가 중요 */
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    background: #fbfbfb;
+}
+#keep-label::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: scale(0) translate(-50%, -50%);
+}
+#keep-label:hover {
+    border-color: rgba(196, 196, 196, 0.5);
+}
+#keep-label:checked {
+    background-color: #90e2d6;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 500;
+    color: white;
+}
+#keep-label:checked::before {
+    transform: scale(1) translate(-50%, -50%);
+}
+label {
+    width: auto;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.find-box {
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px;
+}
+.find-box > a {
+    font-size: 18px;
+}
+.find-each:hover {
+    cursor: pointer;
+}
+.find-box > a:first-child {
+    margin: 0 25px 0 0;
+}
+.lure-naver {
+    width: 288px;
+    height: 60px;
+    margin: 0 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid #c4c4c4 1px;
+    border-radius: 5px;
+    /* background-color: rgb(228, 228, 255); */
+}
+.naver-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.for-naver {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 1px #c4c4c4;
+    cursor: pointer;
+}
+.register-box {
+    width: 288px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 25px;
+}
+.register-box > .find-each {
+    color: black;
+}
