@@ -1,6 +1,6 @@
 "use strict";
 
-const getSelect = document.querySelector("select");
+const getSelect = document.querySelector('[name="selectbox"]');
 let answer = "";
 getSelect.addEventListener("change", function (e) {
     answer = e.target.value;
@@ -9,7 +9,7 @@ const judgeAnswer = {
     true: "정답",
     false: "오답",
 };
-document.getElementById("submit-btn").addEventListener("click", function () {
+document.querySelector("#submit-btn").addEventListener("click", function () {
     fetch("/api/selectbox/submit", {
         method: "POST",
         headers: {
@@ -19,10 +19,13 @@ document.getElementById("submit-btn").addEventListener("click", function () {
             answer,
         }),
     })
-        .then((res) => res.json())
+        .then((res) => {
+            console.log("res :>> ", res);
+            return res.json();
+        })
         .then((res) => {
             console.log(`res`, res);
-            document.getElementById("result").innerText = judgeAnswer[res];
+            document.querySelector("#result").innerText = judgeAnswer[res];
         });
     // then 두번 쓰는 이유 >> fetch 공부
 });

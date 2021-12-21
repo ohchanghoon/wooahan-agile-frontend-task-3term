@@ -1,9 +1,12 @@
 "use strict";
 
-const getChecked = document.getElementById("checkbox");
-const answers = [];
+const getChecked = document.querySelector("#checkbox");
+let answers = [];
 getChecked.addEventListener("change", function (e) {
-    answers.push(e.target.value);
+    const value = e.target.value;
+    answers.includes(value)
+        ? (answers = answers.filter((item) => item !== value))
+        : answers.push(value);
 });
 
 const judgeAnswer = {
@@ -11,7 +14,7 @@ const judgeAnswer = {
     false: "오답",
 };
 
-document.getElementById("submit_btn").addEventListener("click", function () {
+document.querySelector("#submit_btn").addEventListener("click", function () {
     fetch("/api/checkbox/submit", {
         method: "POST",
         headers: {
@@ -21,6 +24,6 @@ document.getElementById("submit_btn").addEventListener("click", function () {
     })
         .then((res) => res.json())
         .then((res) => {
-            document.getElementById("result").innerText = judgeAnswer[res];
+            document.querySelector("#result").innerText = judgeAnswer[res];
         });
 });
