@@ -27,6 +27,7 @@ body {
 }
 
 h2 {
+  font-family: sans-serif;
   text-align: center;
   font-size: 50pt;
 }
@@ -52,10 +53,13 @@ h2 {
 
   background-color: transparent;
   border: transparent;
-  color: #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
 }
-
+.id::placeholder {
+  color: #c4c4c4;
+  font-style: sans-serif;
+  font-size: Regular;
+}
 .login-pwd {
   display: flex;
   flex-flow: row nowrap;
@@ -79,8 +83,12 @@ h2 {
 
   background-color: transparent;
   border: transparent;
-  color: #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
+}
+.pwd::placeholder {
+  color: #c4c4c4;
+  font-style: sans-serif;
+  font-size: regular;
 }
 
 .click-login {
@@ -110,7 +118,8 @@ h2 {
   display: flex;
   flex-flow: row nowrap;
   margin: auto;
-  margin-top: 0%;
+  margin-top: 25px;
+  padding-left: 10px;
   
   font-family: sans-serif;
   margin-left: 10px;
@@ -144,6 +153,7 @@ h2 {
   display: flex;
   flex-flow: row wrap;
   margin: auto;
+  object-fit: cover;
 
   width: 288px;
   height: 60px;
@@ -151,18 +161,17 @@ h2 {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
-.naver-icon {
+/* .naver-icon {
   width: 15px;
   height: 15px;
-}
+} */
 .naver-btn {
-  
   font-family: sans-serif;
   font-size: 18pt;
   color: #c4c4c4;
   
   background-color: transparent;
-  border: 1px solid #c4c4c4;
+  border: transparent;
 }
 
 .sign-up {
