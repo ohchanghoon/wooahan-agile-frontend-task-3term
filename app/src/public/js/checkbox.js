@@ -8,9 +8,11 @@ submitBtn.addEventListener("click", check);
 
 function check() {
   const checkValues = [];
+
   for (let checkBox of checkBoxes) {
     if (checkBox.checked) checkValues.push(checkBox.value);
   }
+
   const checkAnswer = {
     answers: checkValues,
   };

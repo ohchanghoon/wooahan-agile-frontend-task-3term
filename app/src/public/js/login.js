@@ -7,10 +7,10 @@ const id = document.querySelector("#id"),
 
 const resultTag = document.querySelector("#result");
 
+let code = "";
+
 loginBtn.addEventListener("click", login);
 confirmBtn.addEventListener("click", confirm);
-
-let code = "";
 
 function login() {
   const req = {
