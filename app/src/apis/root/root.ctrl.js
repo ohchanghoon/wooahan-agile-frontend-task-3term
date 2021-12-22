@@ -8,8 +8,8 @@ const todolist = {
     const query = 'SELECT * FROM todos;';
 
     db.query(query, (err, posts) => {
-      if (err) throw err;
-      return res.status(200).send(posts);
+      if (err) return res.status(500).send('데이터 조회에 실패하였습니다.');
+      return res.status(200).json(posts);
     });
   },
 
