@@ -163,7 +163,7 @@
   flex-direction: row;
   height: 60px;
   width: 288px;
-  /* border-radius: 5px;*/
+  border-radius: 5px;
   border: 3px solid;
   color: #c4c4c4;
   border-color: #c4c4c4;
@@ -177,7 +177,7 @@
   background-position: center center;
   height: 60px;
   width: 60px;
-  border: 3px solid;
+  border-right: 1px solid #c4c4c4;
 }
 .naverIdLogin {
   display: flex;
