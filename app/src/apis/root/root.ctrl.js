@@ -58,6 +58,7 @@ const todolist = {
 const selectbox = {
   isAnswer: (req, res) => {
     const client = req.body;
+    console.log('client', client);
     if (client.answer !== '개발') {
       return res.json(false);
     }
