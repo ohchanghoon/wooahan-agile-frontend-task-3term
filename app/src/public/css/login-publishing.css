@@ -6,9 +6,10 @@
     color:#90E2D6;
     border:1px solid; 
     padding:10px; 
-    margin-left: 570px; 
-    margin-right: 570px;
+    margin: 0 auto;
     border-radius: 16px;
+    width: 780px;
+    height: 650px;
 }    
 
 .logo {
@@ -58,6 +59,7 @@
 .naver {
     width:24px;
     height:24px;
+    border-right: 1px solid #c4c4c4;
 }
 
 .naver-login {
