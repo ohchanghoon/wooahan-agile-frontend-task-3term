@@ -1,6 +1,6 @@
 "use strict";
 const selectBox = document.querySelector("select");
-console.log(selectBox);
+
 //Q: 이거는 왜 queryselectorall로 받아오면 정답이여야할때 오답이 나오는지??
 const btn = document.querySelector("#submit-btn");
 const returnResult = document.querySelector("#result");
