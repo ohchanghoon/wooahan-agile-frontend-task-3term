@@ -4,11 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <style>
+      img { text-align: center;}
+    </style>
     <link rel="stylesheet" href="/css/login-publishing.css" />
     <script src="/js/login-publishing.js" defer></script>
 
     <title>Wooahan Agile</title>
   </head>
-  <body></body>
+  <body>
+    <img class="logo" src="images/동그라미.png">
+    <div class="display">
+      <h2>로그인</h2>
+  
+      <div class="login-id">
+        <img class="id-icon" src="images/아이디.jpg">
+        <input class="id" id="id" type="text" placeholder="학번을 입력해 주세요.">
+      </div>
+      
+      <div class="login-pwd">
+        <img class="pwd-icon" src="images/비밀번호.jpg">
+        <input class="pwd" id="password" type="text" placeholder="비밀번호를 입력해 주세요.">
+      </div>
+      
+      <div class="click-login">
+        <button class="login-btn" id="login">로그인</button>
+        <label class="check-login"><input type="checkbox" name="login" value="true">로그인 상태 유지</label>
+      </div>
+
+      <div class="search">
+        <button class="search-id" id="search-id">아이디 찾기</button>
+        <button class="search-pwd" id="search-pwd">비밀번호 찾기</button>
+      </div>
+      
+      <div class="naver">
+        <button type="button" class="naver-btn" id="img_btn">
+          <img src="images/네이버.png">네이버 아이디로 로그인
+        </button>
+        <!-- <img class="naver-icon" src="images/네이버.png">
+        <button class="naver-btn" id="login-naver">네이버 아이디로 로그인</button> -->
+      </div>
+      
+      <button class="sign-up" id="sign-up">아직 계정이 없으신가요? 회원가입</button>
+      
+    </div>
+  </body>
 </html>
