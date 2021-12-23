@@ -9,7 +9,6 @@ let getPrivateCode = "";
 getInputId.addEventListener("change", (e) => {
     getId = e.target.value;
 });
-
 getInputPassword.addEventListener("change", (e) => {
     getPassword = e.target.value;
 });
