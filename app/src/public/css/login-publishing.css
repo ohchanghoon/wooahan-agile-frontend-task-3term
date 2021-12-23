@@ -1,4 +1,5 @@
 .logo {
+  margin-bottom:50px;
     width: 230.15px;
     height: 100px;
     display: center;
@@ -8,6 +9,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+  margin-left:570px;
+  margin-right:570px;
+  margin-bottom:170px;
+  margin-top:110px;
+    width: 650px;
+    height: 780px;
+    border-radius: 16px;
+  
 }
 .item {
     color: red;
@@ -17,37 +26,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid red;
+    border: 2px solid #90e2d6;
+    border-radius: 16px;
+    padding-bottom: 42px;
     width: 650px;
     height: 780px;
-    border-radius: 16px;
+    justify-content: center;
+  
+  
 }
 
+.it{
+    display: flex
+    
+}
 .header {
     justify-content: center;
+    font-size: 50px;
 }
 
 #login-form {
     display: flex;
+    color: #c4c4c4;
     flex-direction: column;
     align-items: flex-start;
+  
 }
-
+.login-text{
+  content: ""; 
+  border-bottom: 1px solid #c4c4c4;
+}
 .id-img {
     width: 24px;
     height: 24px;
 }
 
 .id{
-
+  padding-bottom: 20px;
+  padding-top: 25px;
+  width: 461px;
+  border: 1px solid white; 
 }
-
+.password-text{
+  content: ""; 
+  border-bottom: 1px solid #c4c4c4;
+}
 .password-img{
     height: 24px;
     width: 24px;
 }
 
 .password{
+  padding-bottom: 20px;
+  padding-top: 25px;
+  width: 461px;
+  border: 1px solid white; 
+  
 
 }
 
@@ -65,17 +99,64 @@
     font-family: sans-serif bord;
     align-content: center;
     justify-content:center;
+    margin-top:25px;
+    margin-bottom:25px; 
+  
 }
 
 .login-checkbox{
+  color:#c4c4c4;
+}
 
+
+.login-checkbox input{
+  margin-right: 10px;
+}
+#search {
+    display: flex;
+    justify-content: center;
+  width: 100%;
+  margin: 25px;
+  color:#c4c4c4
 }
 
 .search-id{
-
+  display: flex;
+  align-items: left;
+  align-content: flex-start;
+  justify-content: space-between;
+  font-family: sans-serif;
+  color: #c4c4c4; 
 }
-
 .search-password{
-
+  margin-left: 25px;
 }
 
+.social{
+  flex:1;
+  justify-content: center;
+  text-align:center;
+    margin: auto;
+  width: 288px;
+  height: 60px;
+  border: 1px solid #c4c4c4;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 28px;
+  color:#c4c4c4
+}
+#social-login{
+   display: flex;
+	 align-items: center;
+   justify-content: center;
+   width: 100%;
+   color:#c4c4c4 
+}
+.no{
+  margin-right: 20px;
+}
+
+a{
+  color: #c4c4c4;
+  text-decoration: none;
+  }
