@@ -1,41 +1,47 @@
 "use strict";
 
-const name = document.querySelector("#name"),
-  description = document.querySelector("#description");
+const name = document.querySelector("#name");
+const description = document.querySelector("#description");
 const table = document.querySelector("table");
 const regBtn = document.querySelector("button");
 
 table.addEventListener("click", tableHandler);
 regBtn.addEventListener("click", reg);
 
-function inquire() {
+function innerHtmlKey(key) {
+  return ` 
+  <td>${key.name}</td>
+  <td>${key.description}</td>
+  <td><button id="td-update">수정</button></td>
+  <td><button id="td-delete">삭제</button></td>
+  `;
+}
+
+function getInquier() {
   fetch("/api/todolist", {
     method: "GET",
   })
-    .then((res) => res.text())
+    .then((res) => res.json())
     .then((res) => {
-      // 흠..
+      for (let i = 0; i < res.length; i++) {
+        let getTr = document.createElement(`tr`);
+        getTr.setAttribute("index", res[i].id);
+        getTr.innerHTML = innerHtmlKey(res[i]);
+        table.appendChild(getTr);
+      }
     })
     .catch((err) => {
       console.error("To Do 조회에 실패하셨습니다.");
     });
 }
+getInquier().location.reload();
 
 function reg() {
+  const tr = document.createElement(`tr`);
   const user = {
     name: name.value,
     description: description.value,
   };
-  const tr = document.createElement(`tr`);
-
-  tr.innerHTML = `
-        <td>${user.name}</td>
-        <td>${user.description}</td>
-        <td><button id="td-update">수정</button></td>
-        <td><button id="td-delete">삭제</button></td>
-    `;
-
-  table.appendChild(tr);
 
   fetch("/api/todolist", {
     method: "POST",
@@ -47,7 +53,9 @@ function reg() {
     .then((res) => res.text())
     .then((res) => {
       if (typeof res === "string") {
+        tr.innerHTML = innerHtmlKey(user);
         tr.setAttribute("index", res);
+        table.appendChild(tr);
       } else {
         alert("To Do 등록에 실패하셨습니다.");
       }
@@ -90,12 +98,7 @@ function trUpdate(currentTr, index) {
     .then((res) => res.text())
     .then((res) => {
       if (res === index) {
-        currentTr.innerHTML = `
-                <td>${updateUser.name}</td>
-                <td>${updateUser.description}</td>
-                <td><button id="td-update">수정</button></td>
-                <td><button id="td-delete">삭제</button></td>
-            `;
+        currentTr.innerHTML = innerHtmlKey(updateUser);
       } else {
         alert("To Do 수정에 실패하셨습니다.");
       }
