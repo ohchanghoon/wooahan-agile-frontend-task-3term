@@ -34,7 +34,7 @@ function getInquier() {
       console.error("To Do 조회에 실패하셨습니다.");
     });
 }
-getInquier().location.reload();
+getInquier();
 
 function reg() {
   const tr = document.createElement(`tr`);
