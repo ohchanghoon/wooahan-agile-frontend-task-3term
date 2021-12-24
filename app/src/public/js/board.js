@@ -16,13 +16,15 @@ function readBoard() {
         console.log(data.boards[i].no);
         printBoard(data.boards[i]);
       }
+      let totalBoard = document.querySelector('#total-board');
+      totalBoard.innerText = data.boards.length;
     });
 }
 
 function printBoard(data) {
   const tbody = document.querySelector('tbody');
   const newTr = document.createElement('tr');
-  // newTr.setAttribute('index', index.id);
+
   newTr.innerHTML = `
   <td class="no">${data.no}</td>
   <td class="title">${data.title}</td>
@@ -31,7 +33,6 @@ function printBoard(data) {
   <td class="hit">${data.hit}</td>
   <td class="emotionCount">${data.emotionCount}</td>
   `;
-  // console.log('4', index.id);
   tbody.appendChild(newTr);
 }
 
