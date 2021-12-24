@@ -55,7 +55,18 @@ function createToDo(name, description) {
   fetch('/api/todolist', request)
     .then((data) => data.text())
     .then((data) => console.log(data))
-    .then((data) => readToDo());
+    .then((data) => {
+      tbody.innerHTML = `
+      <tr>
+        <th class="th-name">Name</th>
+        <th class="th-description">Description</th>
+        <th class="th-update">Update</th>
+        <th class="th-delete">Delete</th>
+      </tr>
+      `;
+      printToDo(data);
+    });
+  readToDo();
   // console.log(name, description);
 }
 
