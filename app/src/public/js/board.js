@@ -26,12 +26,12 @@ function printBoard(data) {
   const newTr = document.createElement('tr');
 
   newTr.innerHTML = `
-  <td class="no">${data.no}</td>
-  <td class="title">${data.title}</td>
-  <td class="studentName">${data.studentName}</td>
-  <td class="inDate">${data.inDate}</td>
-  <td class="hit">${data.hit}</td>
-  <td class="emotionCount">${data.emotionCount}</td>
+  <td>${data.no}</td>
+  <td>${data.title}</td>
+  <td>${data.studentName}</td>
+  <td>${data.inDate}</td>
+  <td>${data.hit}</td>
+  <td>${data.emotionCount}</td>
   `;
   tbody.appendChild(newTr);
 }

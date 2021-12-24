@@ -174,10 +174,6 @@ main h1:after {
   margin: 100px 288px 160px 288px;
 }
 
-table {
-  border-spacing: 0;
-}
-
 .tablebox p {
   text-align: left;
   font-size: var(--size-medium);
@@ -192,8 +188,10 @@ table {
 }
 
 .tablebox table {
+  border-spacing: 0;
   position: relative;
   top: -30px;
+  table-layout: fixed;
 }
 
 .tablebox th {
@@ -213,43 +211,26 @@ table {
   overflow: hidden;
 }
 
-/* tr td:nth-child(1) {
+tr td:nth-child(1) {
   width: 116px;
 }
 tr td:nth-child(2) {
   width: 550px;
   overflow: hidden;
 }
-tr td:nth-child(1) {
-}
-tr td:nth-child(1) {
-}
-tr td:nth-child(1) {
-}
-tr td:nth-child(1) {
-}
-
-.no {
-}
-
-.title {
-}
-
-.studentName {
+tr td:nth-child(3) {
   width: 218px;
 }
-
-.inDate {
+tr td:nth-child(4) {
   width: 163px;
 }
-
-.hit {
+tr td:nth-child(5) {
+  width: 136px;
+}
+tr td:nth-child(6) {
   width: 136px;
 }
 
-.emotionCount {
-  width: 136px;
-} */
 /* footer */
 footer {
   width: 100%;
