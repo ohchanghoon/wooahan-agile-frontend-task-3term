@@ -56,14 +56,15 @@ const requestNotice = (notices) => {
     const noticeNumber = notices.length;
     const noticeAlarm = document.querySelector(".number-notice");
     noticeAlarm.innerText = noticeNumber;
+    console.log(`notices`, notices[0]);
     notices.forEach((item, index) => {
         const noticeObj = {
             no: item.no,
             title: item.title,
-            user: item.user,
-            date: item.date,
+            user: item.studentName,
+            date: item.inDate,
             hit: item.hit,
-            emot: item.emot,
+            emot: item.emotionCount,
         };
         const addSpace = document.querySelector("table");
         addSpace.append(makeTr(noticeObj));
