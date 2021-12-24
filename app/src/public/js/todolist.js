@@ -30,7 +30,7 @@ function readToDo() {
   fetch('/api/todolist', request)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       for (let i = 0; i < data.length; i++) {
         printToDo(data[i]);
       }
@@ -101,7 +101,30 @@ function updateToDo(index, name, description) {
     .then((data) => data.text())
     .then((data) => {
       // readToDo();
-      printToDo(index);
+      console.log('index', index);
+      console.log('data', data);
+      let updateBtn = document.querySelectorAll(`tr[index=${index}]`);
+      console.log(updateBtn);
+      // let updateTr = updateBtn.parentNode.parentNode;
+      // let updateName = updateTr.firstChild.nextSibling;
+      // let updateDesc = updateName.nextSibling.nextSibling;
+      // console.log('name', updateName);
+      // console.log('desc', updateDesc);
+      // console.log('btn', updateBtn);
+      // console.log('tr', updateTr);
+
+      getName();
+      getDescription();
+
+      console.log('name', updateName);
+      console.log(todoName);
+      updateName.innerText = todoName;
+      updateDesc.innerText = todoDesc;
+      console.log('btn', updateBtn);
+      console.log('tr', updateTr);
+      console.log('name', updateName);
+      console.log('Desc', updateDesc);
+      // printToDo(index);
       console.log(data);
     });
 }

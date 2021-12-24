@@ -5,10 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/board.css" />
+    <script
+      src="https://kit.fontawesome.com/34fbf3adf6.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/js/board.js" defer></script>
 
     <title>Wooahan Agile</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#"><img src="images/동그라미.png" /></a>
+        <ul>
+          <li>소개</li>
+          <li>동아리 목록</li>
+          <li>동아리 홍보</li>
+          <li>게시판</li>
+          <li>MY</li>
+        </ul>
+        <button>로그인</button>
+      </div>
+    </header>
+    <main>
+      <section>
+        <p>HOME > 게시판 > <span>자유게시판</span></p>
+        <h1>자유게시판</h1>
+        <div class="search">
+          <!-- selectBox -->
+          <select name="search">
+            <option value="번호">번호</option>
+            <option value="제목">제목</option>
+            <option value="작성자" selected>작성자</option>
+            <option value="작성일">작성일</option>
+            <option value="조회수">조회수</option>
+            <option value="좋아요">좋아요</option>
+          </select>
+          <div class="search-inputbox">
+            <input type="text" id="search-input" />
+            <div class="search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tablebox">
+        <p>총 <span>20</span> 건의 글이 있습니다.</p>
+        <!-- table -->
+        <table width="1344" align="center">
+          <th width="116">번호</th>
+          <th width="550">제목</th>
+          <th width="218">작성자</th>
+          <th width="163">작성일</th>
+          <th width="136">조회수</th>
+          <th width="136">좋아요</th>
+          <tr>
+            <td>ddd</td>
+            <td>dddd</td>
+            <td>dddddd</td>
+            <td>dddddd</td>
+            <td>dddddd</td>
+            <td>dddddd</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <ul>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>커뮤니티이용규칙</li>
+          <li>공지사항</li>
+          <li>문의하기</li>
+          <li>&copy; 2021 Wooahan Agile</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
