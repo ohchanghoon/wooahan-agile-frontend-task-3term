@@ -62,7 +62,7 @@ const requestNotice = (notices) => {
             no: item.no,
             title: item.title,
             user: item.studentName,
-            date: item.inDate,
+            date: item.inDate.slice(0, 10),
             hit: item.hit,
             emot: item.emotionCount,
         };
