@@ -29,7 +29,7 @@ function printBoard(data) {
   <td>${data.no}</td>
   <td>${data.title}</td>
   <td>${data.studentName}</td>
-  <td>${data.inDate}</td>
+  <td>${data.inDate.slice(0, 10)}</td>
   <td>${data.hit}</td>
   <td>${data.emotionCount}</td>
   `;
