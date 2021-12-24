@@ -50,7 +50,6 @@ header {
 .container {
   width: inherit;
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
 }
 
