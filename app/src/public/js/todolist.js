@@ -30,7 +30,6 @@ function readToDo() {
   fetch('/api/todolist', request)
     .then((res) => res.json())
     .then((data) => {
-      // console.log(data);
       for (let i = 0; i < data.length; i++) {
         printToDo(data[i]);
       }
@@ -67,7 +66,6 @@ function createToDo(name, description) {
       printToDo(data);
     });
   readToDo();
-  // console.log(name, description);
 }
 
 function printToDo(index) {
@@ -76,10 +74,9 @@ function printToDo(index) {
   newTr.innerHTML = `
   <td>${index.name}</td>
   <td>${index.description}</td>
-  <td><button id="td-update" onclick='updateToDo("${index.id}","${index.name}","${index.description}");'>수정</button></td>
-  <td><button id="td-delete" onclick='deleteToDo("${index.id}");'>삭제</button></td>
+  <td><button id="td-update" onclick='updateToDo(event,"${index.id}","${index.name}","${index.description}");'>수정</button></td>
+  <td><button id="td-delete" onclick='deleteToDo(event,"${index.id}");'>삭제</button></td>
   `;
-  // console.log('4', index.id);
   tbody.appendChild(newTr);
 }
 
@@ -91,14 +88,12 @@ btn.addEventListener('click', () => {
 
 // 수정
 
-function updateToDo(index, name, description) {
-  // console.log('update');
-  // console.log(index);
-  // console.log(name);
-  // console.log('설명', description);
+function updateToDo(event, index, name, description) {
+  const highestName = document.querySelector('#name').value;
+  const highestDesc = document.querySelector('#description').value;
   const data = {
-    name: name,
-    description: description,
+    name: highestName,
+    description: highestDesc,
   };
   const request = {
     method: 'PUT',
@@ -111,45 +106,33 @@ function updateToDo(index, name, description) {
   fetch(`/api/todolist/${index}`, request)
     .then((data) => data.text())
     .then((data) => {
-      // readToDo();
-      console.log('index', index);
-      console.log('data', data);
-      let updateBtn = document.querySelectorAll(`tr[index=${index}]`);
-      console.log(updateBtn);
-      // let updateTr = updateBtn.parentNode.parentNode;
-      // let updateName = updateTr.firstChild.nextSibling;
-      // let updateDesc = updateName.nextSibling.nextSibling;
-      // console.log('name', updateName);
-      // console.log('desc', updateDesc);
-      // console.log('btn', updateBtn);
-      // console.log('tr', updateTr);
+      let updateBtn = event.target;
+
+      let updateTr = updateBtn.parentNode.parentNode;
+      let updateName = updateTr.firstChild.nextSibling;
+      let updateDesc = updateName.nextSibling.nextSibling;
 
       getName();
       getDescription();
 
-      console.log('name', updateName);
-      console.log(todoName);
       updateName.innerText = todoName;
       updateDesc.innerText = todoDesc;
-      console.log('btn', updateBtn);
-      console.log('tr', updateTr);
-      console.log('name', updateName);
-      console.log('Desc', updateDesc);
-      // printToDo(index);
-      console.log(data);
     });
 }
 
 // 삭제
 
-function deleteToDo(index) {
+function deleteToDo(event, index) {
+  const deleteBtn = event.target;
+  let deleteTr = deleteBtn.parentNode.parentNode;
+  deleteTr.innerHTML = '';
+  console.log(deleteTr);
   console.log('delete');
   fetch(`/api/todolist/${index}`, {
     method: 'DELETE',
   })
     .then((data) => data.text())
     .then((data) => {
-      // readToDo();
       console.log(data);
     });
 }
