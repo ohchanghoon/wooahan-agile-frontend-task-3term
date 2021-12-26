@@ -25,18 +25,6 @@ const makeTdDes = (desc) => {
     return newTdDes;
 };
 
-// (a, b) => {
-//     const newTdUpdate = document.createElement("td");
-//     const newButtonUpdate = document.createElement("button");
-//     newButtonUpdate.setAttribute("id", a);
-//     newButtonUpdate.setAttribute("onclick", clickUpdate(newButtonUpdate));
-//     newButtonUpdate.innerText = b;
-//     newTdUpdate.append(newButtonUpdate);
-//     return newTdUpdate;
-// }
-
-// ('td-update', '수정')
-
 const makeUpdateBtn = () => {
     const newTdUpdate = document.createElement("td");
     const newButtonUpdate = document.createElement("button");

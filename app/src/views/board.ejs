@@ -1,14 +1,74 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/board.css" />
-    <script src="/js/board.js" defer></script>
+        <link rel="stylesheet" href="/css/board.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <script src="/js/board.js" defer></script>
 
-    <title>Wooahan Agile</title>
-  </head>
-  <body></body>
+        <title>Wooahan Agile</title>
+    </head>
+    <body>
+        <div class="headerWrapper">
+            <img class="mainImg" src="/images/동그라미.png" />
+            <div class="menuBox">
+                <button>소개</button>
+                <button>동아리 목록</button>
+                <button>동아리 홍보</button>
+                <button>게시판</button>
+                <button>MY</button>
+            </div>
+            <button class="login-btn">로그인</button>
+        </div>
+        <div class="rout">
+            <button>HOME</button>
+            <span> > </span>
+            <button>게시판</button>
+            <span> > </span>
+            <button>자유 게시판</button>
+        </div>
+        <div class="title">자유 게시판</div>
+        <div class="searchWrapper">
+            <select class="select">
+                <option>작성자</option>
+            </select>
+            <div>
+                <input type="text" />
+                <img class="search-img" src="/images/search.png" />
+            </div>
+        </div>
+        <div class="noticeAlarm">
+            <span
+                >총 <span class="number-notice"></span>건의 글이 있습니다</span
+            >
+        </div>
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                    <th>좋아요</th>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <a>이용약관</a>
+            <a>개인정보처리방침</a>
+            <a>커뮤니티이용규칙</a>
+            <a>공지사항</a>
+            <a>문의하기</a>
+            <a>Wooahan-agile</a>
+        </div>
+    </body>
 </html>
