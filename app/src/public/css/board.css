@@ -1,0 +1,132 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.top {
+    height: 150px;
+    border-bottom: 1px solid #C4C4C4;
+    
+}
+.ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.li {
+    float: left;
+    margin: 60px 0 60px 0;
+    margin-left: 120px;
+}
+.login {
+    margin: 90px;
+    background-color: #90E2D6;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+.logo {
+    width: 103.5px;
+    height: 45px;
+    margin-left: 184.5px;
+    transform: translateY(-22%);
+}
+.free {
+    color: #80CBC4;
+    text-align: center;
+}
+.preLocal {
+    color: #C4C4C4;
+    text-align: right;
+    margin-right: 288px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+.freeBoard {
+    text-align: center;
+    margin-top: 5px;
+}
+.underBar {
+    /* border: 1px solid; */
+    border-bottom: 5px solid #90E2D6;
+    width: 44px;
+    margin: 0 auto;
+}
+.labelDiv {
+    display: block;
+    margin-left: 620px;
+    margin-top: 100px;
+}
+.selectBox {
+    width: 100px;
+    height: 38px;
+    border-radius: 20px;
+    border-color: solid #D3D3D3;
+    text-align: center;
+}
+.inputBox {
+    width: 500px;
+    height: 38px;
+    border-radius: 5px;
+    border-color: solid #D3D3D3;
+    margin-left: 20px;
+}
+.but {
+    padding: 0;
+    border: 0;
+    
+}
+.hover1:hover  {
+    box-shadow:200px 0 0 0 rgba(0,0,0,0.5) inset;
+}
+.img {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+.searchDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.noticePostNumDiv {
+    margin-top: 48px;
+    margin-bottom: 25px;
+    margin-left: 288px;
+}
+table {
+    width: 1334px;
+    height: 60px;
+    border-spacing: 0px;
+    margin-left: 288px;
+    border-top: 3px solid #80CBC4;
+}
+tr {
+    text-align: center;
+}
+.tr-title {
+    background-color: #d0faf4;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.thNum {
+    text-align: center;
+    width: 114px;
+}
+.thTitle {
+    text-align: center;
+    width: 548px;
+}
+.thWriter {
+    text-align: center;
+    width: 216px;
+}
+.thDate {
+    text-align: center;
+    width: 161px;
+}
+.thView {
+    text-align: center;
+    width: 134px;
+}
+.thLike {
+    text-align: center;
+    width: 134px;
+}
