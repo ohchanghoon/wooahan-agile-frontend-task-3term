@@ -4,11 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/board.css" />
     <script src="/js/board.js" defer></script>
 
     <title>Wooahan Agile</title>
   </head>
-  <body></body>
+  <body>
+    <div class = "top">
+      <ul class = "ul">
+        <li class="li"><img src="/images/동그라미.png" class="logo"></li>
+        <li class="li">소개</li>
+        <li class="li">동아리 목록</li>
+        <li class="li">동아리 홍보</li>
+        <li class="li">게시판</li>
+        <li class="li">MY</li>
+        <li class="li"><span class="login">로그인</span></li>
+      </ul>
+    </div>
+    <h4 class="preLocal">HOME > 게시판 > <span class="free">자유 게시판</span></h4>
+    <h1 class="freeBoard">자유 게시판</h1>
+    <div class="underBar">
+    </div>
+    <div class="labelDiv">
+      <label for="slecteLabel">
+        <div class='searchDiv'>
+          <select class="selectBox">
+            <option value="writer"><span>작성자</span></option>
+          </select>          
+          <input type="search" value="" class="inputBox">
+          <button type="button" class="but hover1"><img src="\images\돋보기.png" class="img"></button>
+        </div>
+      </label>
+    </div>
+    <div class="noticePostNumDiv">
+    </div>
+    <table>
+      <tr class='tr-title'>
+        <td class="thNum">번호</td>
+        <td class="thTitle">제목</td>
+        <td class="thWriter">작성자</td>
+        <td class="thDate">작성일</td>
+        <td class="thView">조회수</td>
+        <td class="thLike">좋아요</td>
+      </tr>
+      
+    </table>
+  </body>
 </html>

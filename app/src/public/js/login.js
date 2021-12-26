@@ -37,7 +37,7 @@ const infofetchFuc = () => {
     .then((res) => res.json())
     .then((res) => {
         if (res.msg === 'success') {
-            resultWellcome.innerText = '우아한 애자일님 환영합니다.';
+            resultWellcome.innerText = `${res.user.name}님 환영합니다.`
         } else alert(res.msg);
     })
 }
