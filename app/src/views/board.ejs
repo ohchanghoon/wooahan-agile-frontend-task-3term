@@ -4,11 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/board.css" />
     <script src="/js/board.js" defer></script>
 
     <title>Wooahan Agile</title>
   </head>
-  <body></body>
+  <body>
+    <header class="headerWrapper">
+      <div class="donguramiImg">
+        <img src="/images/동그라미.png" alt="동그라미 " />
+      </div>
+      <div class="headerList">
+        <ul>
+          <li>소개</li>
+          <li>동아리 목록</li>
+          <li>동아리 홍보</li>
+          <li>게시판</li>
+          <li>MY</li>
+        </ul>
+      </div>
+      <button class="loginButton">로그인</button>
+    </header>
+    <div class="bodyFirstWrap">
+      <div class="bodyFirstEnd">
+        <ul>
+          <a href="#">HOME</a>
+          <a href="#">></a>
+          <a href="#">게시판</a>
+          <a href="#">></a>
+          <a href="#" id="blueA">자유 게시판</a>
+        </ul>
+      </div>
+      <div class="bodyFirstcenter">
+        <h1 class="bodyTitle">자유 게시판</h1>
+      </div>
+    </div>
+    <div class="bodySecondWrap">
+      <select class="select">
+        <option>작성자</option>
+        <option>번호</option>
+        <option>제목</option>
+        <option>작성일</option>
+      </select>
+      <input class="writerInput" type="text" />
+      <div class="icon">
+        <!-- <img src="/images/icon.png" alt="아이콘" /> -->
+      </div>
+    </div>
+    <div class="bodyThirdWrap">
+      <h4>20건의 글이 있습니다.</h4>
+      <div id="table">
+        <table>
+          <tr>
+            <th class="no">번호</th>
+            <th class="title">제목</th>
+            <th class="studentName">작성자</th>
+            <th class="inDate">작성일</th>
+            <th class="hit">조회수</th>
+            <th class="emotionCount">좋아요</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footWrapper">
+      <div class="footerList">
+        <ul>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>커뮤니티이용규칙</li>
+          <li>공지사항</li>
+          <li>문의하기</li>
+          <li>2021 Wooahan Agile</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
