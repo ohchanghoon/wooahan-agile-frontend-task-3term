@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+:root {
+  /* font-weight */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  /* font-size */
+  --size-smallest: 16px;
+  --size-small: 18px;
+  --size-medium: 20px;
+  --size-big: 40px;
+  /* margin */
+  --margin-header: 120px;
+  --margin-footer: 60px;
+  /* color */
+  --color-lightgray: #d3d3d3;
+  --color-gray: #c4c4c4;
+  --color-mint: #80cbc4;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 150px;
+  font-weight: var(--weight-medium);
+  font-size: var(--size-medium);
+  border-bottom: 2px solid var(--color-gray);
+}
+
+.container {
+  width: inherit;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 103.5px;
+  height: 45px;
+  margin-left: 288px;
+  margin-right: 187px;
+}
+
+header ul {
+  margin: 62px 0;
+}
+
+header li:not(:last-child) {
+  margin-right: var(--margin-header);
+}
+
+header li:last-child {
+  margin-right: 210px;
+}
+
+header button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #90e2d6;
+  font-weight: var(--weight-medium);
+  font-size: var(--size-medium);
+  padding-bottom: 5px;
+  margin-right: 288px;
+  cursor: pointer;
+}
+
+/* main */
+main {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+
+main p {
+  text-align: right;
+  font-weight: var(--weight-light);
+  font-size: var(--size-medium);
+  margin-right: 288px;
+  color: var(--color-gray);
+}
+
+main p span {
+  font-size: var(--size-small);
+  color: var(--color-mint);
+}
+
+main h1 {
+  margin-top: 30px;
+  font-size: var(--size-big);
+  font-weight: var(--weight-bold);
+}
+
+main h1:after {
+  content: '';
+  display: block;
+  width: 40px;
+  margin: 22px auto 100px auto;
+  border-bottom: 4px solid var(--color-mint);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 38px;
+  margin: 0 auto;
+}
+
+.search select {
+  border: 1px solid var(--color-lightgray);
+  width: 100px;
+  height: 38px;
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: var(--size-smallest);
+  font-weight: var(--weight-light);
+  cursor: pointer;
+}
+
+.search-inputbox {
+  width: 668px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-lightgray);
+}
+
+.search-inputbox input {
+  border: none;
+  height: 38px;
+  width: 630px;
+  padding-left: 3px;
+}
+
+.search-icon {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  right: -1px;
+  background-color: var(--color-lightgray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablebox {
+  width: 1344px;
+  margin: 100px 288px 160px 288px;
+}
+
+.tablebox p {
+  text-align: left;
+  font-size: var(--size-medium);
+  font-weight: var(--weight-bold);
+  color: var(--color-gray);
+  position: relative;
+  top: -45px;
+}
+
+.tablebox p span {
+  color: var(--color-mint);
+}
+
+.tablebox table {
+  border-spacing: 0;
+  position: relative;
+  top: -30px;
+  table-layout: fixed;
+}
+
+.tablebox th {
+  height: 60px;
+  background-color: #e5f3f3;
+  border-top: 3px solid var(--color-mint);
+  font-size: var(--size-medium);
+  font-weight: var(--weight-medium);
+  margin-right: 5px;
+}
+
+.tablebox td {
+  height: 60px;
+  font-size: var(--size-medium);
+  font-weight: var(--weight-regular);
+  border-bottom: 1px solid var(--color-lightgray);
+  overflow: hidden;
+}
+
+tr td:nth-child(1) {
+  width: 116px;
+}
+tr td:nth-child(2) {
+  width: 550px;
+  overflow: hidden;
+}
+tr td:nth-child(3) {
+  width: 218px;
+}
+tr td:nth-child(4) {
+  width: 163px;
+}
+tr td:nth-child(5) {
+  width: 136px;
+}
+tr td:nth-child(6) {
+  width: 136px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: var(--color-lightgray);
+}
+
+footer .container ul {
+  margin: 113px auto;
+  font-size: var(--size-smallest);
+  font-weight: var(--weight-regular);
+  color: #747474;
+}
+
+footer .container li:not(:last-child) {
+  margin-right: 60px;
+}
