@@ -5,7 +5,6 @@ const loginButton = document.querySelector("#login");
 const confirmButton = document.querySelector("#confirm");
 const infoResult = document.querySelector("#result");
 let confirmCode = "";
-let path = "";
 
 const onSubmitLogin = () => {
   const idPwData = {
