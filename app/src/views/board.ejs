@@ -4,11 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="/css/board.css" />
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="/css/board.css"/>
     <script src="/js/board.js" defer></script>
 
     <title>Wooahan Agile</title>
   </head>
-  <body></body>
+  <body>
+    <div class="lay-out1">
+      <img src="images/동그라미.png">
+      <ul id="ul1">
+        <li id="intro-btn">소개</li>
+        <li id="circles-btn">동아리목록</li>
+        <li id="promotion-btn">동아리홍보</li>
+        <li id="notice-btn">게시판</li>
+        <li id="my-btn">MY</li>
+        <li id="login-btn">로그인</li>
+      </ul>
+    </div>
+  
+    <div class="notice-title">
+      <label class="mini-location1">HOME -> 게시판 -> </label><label class=mini-location2>자유게시판</label>
+      <label class="free-notice-title">자유 게시판</label>
+    </div>
+
+    <div class="lay-out2">
+      <label for="search">작성자</label>
+      <input id="search" type="text">
+    </div>
+  
+    <div class="lay-out3" id="free">
+      <table id="free-notice">
+        <tr>
+          <th class="th-no">번호</th>
+          <th class="th-title">제목</th>
+          <th class="th-student-name">작성자</th>
+          <th class="th-in-date">작성일</th>
+          <th class="th-hit">조회수</th>
+          <th class="th-emotion-count">좋아요</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="lay-out4">
+      <ul id="ul2">
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>커뮤니티이용규칙</li>
+        <li>공지사항</li>
+        <li>문의하기</li>
+        <li>@2021 Wooahan Agile</li>
+      </ul>
+    </div>
+    
+  </body>
 </html>
